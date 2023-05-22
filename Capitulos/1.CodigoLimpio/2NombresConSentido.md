@@ -153,6 +153,26 @@ coloquiales o jergas. Por ejemplo, no use whack() en lugar de kill(). No recurra
 __Una palabra por concepto__
 Es importante utilizar una palabra consistente para cada operación similar en todas las clases. Por ejemplo, si quieres obtener la información de un empleado, en lugar de utilizar métodos diferentes como "getInfo" en la clase "Employee", "fetchData" en la clase "Department" y "retrieveEmployee" en la clase "Payroll", debes elegir una palabra como "get" y mantenerla en todos los métodos equivalentes. Por lo tanto, podrías tener métodos como "getInfo" en la clase "Employee", "getInfo" en la clase "Department" y "getEmployeeInfo" en la clase "Payroll". Esto hace que sea más fácil para ti y otros desarrolladores recordar y entender qué método se utiliza para obtener la información de un empleado en cualquier parte del código.
 
+__No haga juegos de palabras__
+-Evite usar la misma palabra con dos fines distintos.
+-Nuestro objetivo, como autores, es facilitar la comprensión del código, no hacer un modelo académico que exija investigar el significado
+mostrado.
+
+
+    Imagina que tienes una caja donde guardas objetos. Ahora, tienes dos acciones diferentes que puedes realizar con esa caja:
+
+    Agregar un objeto nuevo a la caja.
+    1. Sumar o combinar dos objetos que ya están dentro de la caja.
+    2. En este caso, "agregar" y "sumar/concatenar" son dos acciones diferentes que realizas con la caja.
+
+    Ahora, piensa en cómo llamarías a los métodos que realizan estas acciones en tu programa:
+
+    Si tienes un método llamado "add" que toma dos objetos dentro de la caja y los suma o concatena para obtener un nuevo objeto, eso está bien. Por ejemplo, puedes tener un método llamado "add" que toma dos números y los suma.
+
+    Sin embargo, si quieres agregar un objeto nuevo a la caja, es mejor utilizar un nombre diferente para ese método. Por ejemplo, puedes llamarlo "insert" o "append". Esto ayuda a evitar confusiones, ya que el método "add" en este caso tiene un significado diferente y podría llevar a malentendidos si se utiliza para agregar objetos a la caja.
+
+    La idea principal es utilizar nombres de métodos que reflejen claramente lo que están haciendo. Si dos métodos realizan acciones diferentes, aunque puedan ser similares en ciertos aspectos, es mejor utilizar nombres diferentes para evitar confusiones y hacer que el código sea más fácil de entender.
+
 
 
 
