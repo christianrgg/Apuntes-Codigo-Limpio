@@ -58,8 +58,11 @@ La proporción entre tiempo dedicado a leer frente a tiempo dedicado a escribir 
 *La regla del Boy Scout
 Dejar el campamento más limpio de lo que se ha encontrado: No hace falta que la limpieza sea masiva. Cambie el nombre de una variable, divida una función demasiado extensa, elimine elementos duplicados, simplifique una instrucción if compuesta.
 
-
-
+*Precuela y principios
+-Principios de diseño como SRP: Single Responsibility Principle o Principio de
+responsabilidad única
+-OCP: Open Closed Principle o Principio Abierto/Cerrado
+-
 
 
 
