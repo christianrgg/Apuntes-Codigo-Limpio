@@ -239,7 +239,14 @@ LOGICA:
 8. Finalmente, el método make utiliza las variables actualizadas para construir y devolver el mensaje completo.
 Esta secuencia de ejecución garantiza que las variables number, verb y pluralModifier estén configuradas correctamente según el valor del contador, y el método make puede construir el mensaje final de acuerdo con esas variables.
 
+__No añadir contextos innecesarios__
+Los nombres breves suelen ser más adecuados que los extensos, siempre que sean claros. No añada más contexto del necesario a un nombre. Los nombres accountAddress y customerAddress son perfectos para instancias de la clase Address pero no sirven como nombres de clase. Address sirve como nombre de clase. Para distinguir entre direcciones MAC, direcciones de puertos y direcciones Web, podría usar PostalAddress, MAC y URI. Los nombres resultantes son más precisos, el objetivo de cualquier nombre.
+EJEMPLO
+    Imagina que estás desarrollando un programa para una biblioteca, y necesitas representar información sobre los libros prestados. Tienes una clase llamada Book que representa un libro en la biblioteca.
 
+    Ahora, necesitas definir una variable para almacenar el estado de disponibilidad del libro, es decir, si está prestado o no. ¿Qué nombre sería más adecuado para esa variable: availabilityStatus o isAvailable?
+
+    En este caso, el nombre más adecuado sería isAvailable. Aunque availabilityStatus podría ser más descriptivo, isAvailable es más corto, directo y sigue la convención de nombres booleanos en muchos lenguajes de programación. Al utilizar isAvailable, se entiende claramente que se refiere al estado de disponibilidad del libro, sin necesidad de añadir información adicional.
 
 
 
