@@ -173,6 +173,15 @@ mostrado.
 
     La idea principal es utilizar nombres de métodos que reflejen claramente lo que están haciendo. Si dos métodos realizan acciones diferentes, aunque puedan ser similares en ciertos aspectos, es mejor utilizar nombres diferentes para evitar confusiones y hacer que el código sea más fácil de entender.
 
+__Usar nombres de dominios de soluciones__
+Los lectores de su código serán programadores. Por ello, use términos informáticos, algoritmos, nombres de patrones, términos matemáticos y demás. No conviene extraer todos los nombres del dominio de problemas ya que no queremos que nuestros colegas tengan que preguntar el significado de cada nombre en especial cuando ya conocen el concepto bajo otro nombre diferente.
+
+__Usar nombres de dominios de problemas__
+Cuando no exista un término de programación para lo que esté haciendo, use el nombre del dominio de problemas. Al menos el programador que mantenga su código podrá preguntar el significado a un experto en dominios.
+EJEMPLO
+    Supongamos que estás desarrollando un programa de gestión de inventario para una tienda de ropa. Necesitas escribir un método para realizar un descuento especial en ciertos productos de una categoría específica, digamos "camisetas".
+
+    En este caso, no hay un término de programación específico para esta acción de descuento especial en camisetas. En lugar de elegir un nombre vago o confuso, es mejor usar un nombre que refleje el dominio del problema, en este caso, "aplicarDescuentoEspecialEnCamisetas".
 
 
 
