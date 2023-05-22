@@ -108,6 +108,14 @@ Ejemplo con J:
     s += (t[j]*4)/5;
     }
 
+__Evitar codificaciones__
+Al codificar información de tipos o ámbitos en un nombre se dificulta la descodificación. No parece razonable que todos los nuevos empleados tengan que aprender otro lenguaje de codificación además del código con el
+que van a trabajar.
+
+__Notación húngara__
+en la actualidad HN y otras formas de codificación de tipos no son más que un impedimento. Hacen que sea más complicado cambiar el nombre o el tipo de una variable o clase. Dificultan la legibilidad del código y pueden hacer que el sistema de codificación confunda al lector.
+
+__Prefijos de miembros__
 
 
 
