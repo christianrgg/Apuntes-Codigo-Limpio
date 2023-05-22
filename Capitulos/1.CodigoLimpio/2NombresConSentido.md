@@ -113,10 +113,14 @@ Al codificar información de tipos o ámbitos en un nombre se dificulta la desco
 que van a trabajar.
 
 __Notación húngara__
-en la actualidad HN y otras formas de codificación de tipos no son más que un impedimento. Hacen que sea más complicado cambiar el nombre o el tipo de una variable o clase. Dificultan la legibilidad del código y pueden hacer que el sistema de codificación confunda al lector.
+En la actualidad HN y otras formas de codificación de tipos no son más que un impedimento. Hacen que sea más complicado cambiar el nombre o el tipo de una variable o clase. Dificultan la legibilidad del código y pueden hacer que el sistema de codificación confunda al lector.
 
 __Prefijos de miembros__
+No necesario añadir m_ como prefijo a los nombres de variables. Lasvclases y funciones tienen el tamaño necesario para no tener que hacerlo, y debe usar un entorno de edición que resalte o coloree los miembros para
+distinguirlos.
 
+__Interfaces e Implementaciones__
+Existe un caso especial para usar codificaciones. Imagine por ejemplo que crea una factoría abstracta para crear formas. Esta factoría será una interfaz y se implementará por medio de una clase concreta. ¿Qué nombres debe asignar? ¿IShapeFactory y ShapeFactory? La I inicial, tan habitual en los archivos de legado actuales es, en elmejor de los casos, una distracción, y en el peor, un exceso de información. Los usuarios no deben saber que se trata de una interfaz, Es mejor usar ShapeFactoryImp o incluso CShapeFactory, que codificar la interfaz.
 
 
 
