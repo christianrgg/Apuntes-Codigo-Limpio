@@ -122,6 +122,33 @@ distinguirlos.
 __Interfaces e Implementaciones__
 Existe un caso especial para usar codificaciones. Imagine por ejemplo que crea una factoría abstracta para crear formas. Esta factoría será una interfaz y se implementará por medio de una clase concreta. ¿Qué nombres debe asignar? ¿IShapeFactory y ShapeFactory? La I inicial, tan habitual en los archivos de legado actuales es, en elmejor de los casos, una distracción, y en el peor, un exceso de información. Los usuarios no deben saber que se trata de una interfaz, Es mejor usar ShapeFactoryImp o incluso CShapeFactory, que codificar la interfaz.
 
+__Evitar asignaciones mentales__
+-Los lectores no tienen que traducir mentalmente sus nombres en otros que ya conocen.
+-Un contador de bucles se podría bautizar como i, j o k (pero nunca l) si su ámbito es muy reducido y no hay conflictos con otros nombres, ya que los nombres de una letra son tradicionales en contadores de bucles.
+-Si puede recordar que r es la versión en minúscula de una URL sin el host y el sistema, debe ser muy listo.
+-Una diferencia entre un programador inteligente y un programador profesional es que este último sabe que la claridad es lo que importa. Los profesionales usan sus poderes para hacer el bien y crean código que otros
+puedan entender.
+
+__Nombres de clases__
+-Las clases y los objetos deben tener nombres o frases de nombre como Customer, WikiPage, Account y AddressParser. 
+-Evite palabras como Manager, Processor, Data, o Info en el nombre de una clase. 
+El nombre de una clase no debe ser un verbo.
+
+__Nombres de métodos__
+Los métodos deben tener nombres de verbo como postPayment, deletePage o save. Los métodos de acceso, de modificación y los predicados deben tener como nombre su valor y usar como prefijo get, set e is de acuerdo al estándar de javabean.
+EJEMPLO
+    string name = employee.getName();
+    customer.setName(“mike”);
+    if (paycheck.isPosted())…
+
+Al sobrecargar constructores, use métodos de factoría estáticos con nombres que describan los argumentos. Por ejemplo:
+    Complex fulcrumPoint = Complex.FromRealNumber(23.0);
+es mejor que:
+    Complex fulcrumPoint = new Complex(23.0);
+
+__
+
+
 
 
 
