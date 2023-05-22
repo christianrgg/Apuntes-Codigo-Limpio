@@ -146,7 +146,12 @@ Al sobrecargar constructores, use métodos de factoría estáticos con nombres q
 es mejor que:
     Complex fulcrumPoint = new Complex(23.0);
 
-__
+__No se exceda con el atractivo__
+Opte por la claridad antes quepor el entretenimiento. En el código, el atractivo suele aparecer como formas
+coloquiales o jergas. Por ejemplo, no use whack() en lugar de kill(). No recurra a bromas culturales como eatMyShorts() si quiere decir abort(). Diga lo que piense. Piense lo que diga.
+
+__Una palabra por concepto__
+Es importante utilizar una palabra consistente para cada operación similar en todas las clases. Por ejemplo, si quieres obtener la información de un empleado, en lugar de utilizar métodos diferentes como "getInfo" en la clase "Employee", "fetchData" en la clase "Department" y "retrieveEmployee" en la clase "Payroll", debes elegir una palabra como "get" y mantenerla en todos los métodos equivalentes. Por lo tanto, podrías tener métodos como "getInfo" en la clase "Employee", "getInfo" en la clase "Department" y "getEmployeeInfo" en la clase "Payroll". Esto hace que sea más fácil para ti y otros desarrolladores recordar y entender qué método se utiliza para obtener la información de un empleado en cualquier parte del código.
 
 
 
