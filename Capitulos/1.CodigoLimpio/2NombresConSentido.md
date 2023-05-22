@@ -79,7 +79,25 @@ ProductData, habrá creado nombres distintos, pero con el mismo significado.
 -No es incorrecto usar prefijos como a y the mientras la distinción tenga sentido.
 -La palabra variable no debe incluirse nunca en el nombre de una variable. 
 -La palabra table no debe incluirse nunca en el nombre de una tabla.
--
+
+
+__Usar nombres que se puedan pronunciar__
+-Cree nombres pronunciables. Si no lo puede pronunciar, no podrá explicarlo sin parecer tonto.
+    --ERROR
+        class DtaRcrd102 {
+        private Date genymdhms;
+        private Date modymdhms;
+        private final String pszqint = “102”;
+        /*… */
+        };
+
+    --MEJOR
+        class Customer {
+        private Date generationTimestamp;
+        private Date modificationTimestamp;
+        private final String recordId = “102”;
+        /*… */
+        };
 
 
 
