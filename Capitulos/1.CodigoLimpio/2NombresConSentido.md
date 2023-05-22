@@ -99,6 +99,16 @@ __Usar nombres que se puedan pronunciar__
         /*… */
         };
 
+__Usar nombres que se puedan buscar__
+-Los nombres de una letra y las constantes numéricas tienen un problema: no son fáciles de localizar en el texto. Se puede detectar MAX_CLASSES_PER_STUDENT, pero el número 7 resulta más complicado.
+-Nombres de una letra que sólo se puedan usar como variables locales dentro de métodos breves. La longitud de un nombre debe corresponderse al tamaño de su ámbito [N5]. Si una variable o constante se usa en varios puntos del código, debe asignarle un nombre que se pueda buscar.
+
+Ejemplo con J: 
+    for (int j=0; j<34; j++) {
+    s += (t[j]*4)/5;
+    }
+
+
 
 
 
