@@ -184,6 +184,68 @@ EJEMPLO
     En este caso, no hay un término de programación específico para esta acción de descuento especial en camisetas. En lugar de elegir un nombre vago o confuso, es mejor usar un nombre que refleje el dominio del problema, en este caso, "aplicarDescuentoEspecialEnCamisetas".
 
 
+__Añadir contexto con sentido__
+Imagine que tiene las variables firstName, lastName, street, houseNumber, city, state y zipcode. Si las combina, es evidente que forman una dirección. Pero si la variable state se usa de forma aislada en un método, ¿sabría que forma parte de una dirección? Puede añadir contexto por medio de prefijos: addrFirstName, addrLastName, addrState, etc. Al menos los lectores comprenderán que estas variables forman parte de una estructura mayor. Evidentemente, es mejor crear la clase Address.
+EJEMPLO DE CODIGO EN JAVASCRIPT
+    class GuessStatisticsMessage {
+    constructor() {
+        this.number = "";
+        this.verb = "";
+        this.pluralModifier = "";
+    }
+
+    make(candidate, count) {
+        this.createPluralDependentMessageParts(count);
+        return `There ${this.verb} ${this.number} ${candidate}${this.pluralModifier}.`;
+    }
+
+    createPluralDependentMessageParts(count) {
+        if (count === 0) {
+        this.thereAreNoLetters();
+        } else if (count === 1) {
+        this.thereIsOneLetter();
+        } else {
+        this.thereAreManyLetters(count);
+        }
+    }
+
+    thereAreManyLetters(count) {
+        this.number = "1";
+        this.verb = "is";
+        this.pluralModifier = "";
+    }
+
+    thereIsOneLetter() {
+        this.number = "1";
+        this.verb = "is";
+        this.pluralModifier = "";
+    }
+
+    thereAreNoLetters() {
+        this.number = "no";
+        this.verb = "are";
+        this.pluralModifier = "s";
+    }
+    }
+
+LOGICA: 
+1. Se define la clase GuessStatisticsMessage con sus variables de instancia: number, verb y pluralModifier.
+2. El método make recibe un candidato (candidate) y un contador (count). Llama al método createPluralDependentMessageParts para determinar los componentes del mensaje dependiendo del contador.
+3. El método createPluralDependentMessageParts determina qué método de actualización de variables debe llamar en función del valor del contador.
+4. Si el contador es igual a 0, se llama al método thereAreNoLetters, que actualiza las variables number, verb y pluralModifier para reflejar que no hay letras.
+5. Si el contador es igual a 1, se llama al método thereIsOneLetter, que actualiza las variables number, verb y pluralModifier para reflejar que hay una letra.
+6. Si el contador no es ni 0 ni 1, se llama al método thereAreManyLetters, que actualiza las variables number, verb y pluralModifier para reflejar que hay varias letras.
+7. Cada uno de los métodos de actualización (thereAreNoLetters, thereIsOneLetter y thereAreManyLetters) asigna los valores adecuados a las variables number, verb y pluralModifier según el caso.
+8. Finalmente, el método make utiliza las variables actualizadas para construir y devolver el mensaje completo.
+Esta secuencia de ejecución garantiza que las variables number, verb y pluralModifier estén configuradas correctamente según el valor del contador, y el método make puede construir el mensaje final de acuerdo con esas variables.
+
+
+
+
+
+
+
+
 
 
 
