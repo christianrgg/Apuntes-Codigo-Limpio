@@ -58,8 +58,19 @@ function getFleggedCells() {
     return flaggedCells;
 }
 
+__Evitar la desinformación__
+-Debemos evitar palabras cuyo significado se aleje del que pretendemos. Por ejemplo, hp, aix y sco son nombres de variables pobres.
+-No haga referencia a un grupo de cuentas como accountList a menos que realmente sea una lista (List).
+-Evite usar nombres con variaciones mínimas: (a)XYZControllerForEfficientHandlingOfStrings; (b)XYZControllerForEfficientStorageOfStrings
+-El uso de ortografía incoherente es desinformación 
+-Un ejemplo de nombre desinformativo sería el uso de la L minúscula o la O mayúscula como nombres de variables, sobre todo combinados.
+    int a = l;
+    if ( O == l )
+    a = O1;
+    else
+    l = 01;
 
-
+-
 
 
 
