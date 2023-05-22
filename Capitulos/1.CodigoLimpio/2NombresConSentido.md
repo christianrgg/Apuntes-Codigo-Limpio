@@ -70,6 +70,15 @@ __Evitar la desinformación__
     else
     l = 01;
 
+__Realizar distinciones con sentido__
+-Se crean problemas al crear código únicamente dirigido a un compilador o intérprete.
+-Aunque se puede usar el mismo nombre para hacer referencia a dos elementos distintos en el mismo ámbito, puede verse tentado a cambiar un nombre de forma arbitraria. En ocasiones se hace escribiéndolo incorrectamente, lo que provoca que los errores ortográficos impidan la compilación.
+-Los nombres de series numéricas (a1, a2… aN) simplemente no ofrecen información.
+-Las palabras adicionales son otra distinción sin sentido. Si tiene otra clase con el nombre ProductInfo o
+ProductData, habrá creado nombres distintos, pero con el mismo significado.
+-No es incorrecto usar prefijos como a y the mientras la distinción tenga sentido.
+-La palabra variable no debe incluirse nunca en el nombre de una variable. 
+-La palabra table no debe incluirse nunca en el nombre de una tabla.
 -
 
 
